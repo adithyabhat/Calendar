@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="YearTableViewCell" rowHeight="667" id="nyg-D8-68w" customClass="YearTableViewCell" customModule="Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nyg-D8-68w" id="WYz-0o-kLM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="666.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BdS-g9-Phf">
+                        <rect key="frame" x="10" y="10" width="355" height="646.5"/>
+                        <subviews>
+                            <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-us-UHM">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="154"/>
+                            </stackView>
+                            <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uay-UU-ykw">
+                                <rect key="frame" x="0.0" y="164" width="355" height="154.5"/>
+                            </stackView>
+                            <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Ud-ib-69i">
+                                <rect key="frame" x="0.0" y="328.5" width="355" height="154"/>
+                            </stackView>
+                            <stackView contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OEa-d2-dZv">
+                                <rect key="frame" x="0.0" y="492.5" width="355" height="154"/>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BdS-g9-Phf" firstAttribute="leading" secondItem="WYz-0o-kLM" secondAttribute="leading" constant="10" id="4zs-N8-6Ah"/>
+                    <constraint firstAttribute="trailing" secondItem="BdS-g9-Phf" secondAttribute="trailing" constant="10" id="7ZJ-c1-oUo"/>
+                    <constraint firstAttribute="bottom" secondItem="BdS-g9-Phf" secondAttribute="bottom" constant="10" id="CGH-jI-tZK"/>
+                    <constraint firstItem="BdS-g9-Phf" firstAttribute="top" secondItem="WYz-0o-kLM" secondAttribute="top" constant="10" id="l1T-G9-Yi9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="verticalStackView" destination="BdS-g9-Phf" id="h1d-Hd-gwi"/>
+            </connections>
+            <point key="canvasLocation" x="390" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>

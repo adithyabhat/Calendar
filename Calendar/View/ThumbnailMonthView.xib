@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ThumbnailMonthView" customModule="Calendar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbp-At-5DH">
+                    <rect key="frame" x="0.0" y="108.5" width="375" height="450"/>
+                    <subviews>
+                        <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jfd-th-7qZ">
+                            <rect key="frame" x="0.0" y="74.5" width="375" height="375"/>
+                            <subviews>
+                                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hW9-Rm-Mmi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
+                                </stackView>
+                                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ySg-Dj-mXe">
+                                    <rect key="frame" x="0.0" y="62.5" width="375" height="62.5"/>
+                                </stackView>
+                                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-DK-wGH">
+                                    <rect key="frame" x="0.0" y="125" width="375" height="62.5"/>
+                                </stackView>
+                                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="02B-HM-T9N">
+                                    <rect key="frame" x="0.0" y="187.5" width="375" height="62.5"/>
+                                </stackView>
+                                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dia-ly-5v6">
+                                    <rect key="frame" x="0.0" y="250" width="375" height="62.5"/>
+                                </stackView>
+                                <stackView contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WPb-47-OEO">
+                                    <rect key="frame" x="0.0" y="312.5" width="375" height="62.5"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jfd-th-7qZ" secondAttribute="height" multiplier="1:1" id="Bg1-Yo-Sqx"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZXn-Ez-JKF">
+                            <rect key="frame" x="8" y="-11" width="139" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jfd-th-7qZ" secondAttribute="bottom" id="9eY-kj-aUV"/>
+                        <constraint firstAttribute="trailing" secondItem="jfd-th-7qZ" secondAttribute="trailing" id="WZf-CE-24d"/>
+                        <constraint firstItem="jfd-th-7qZ" firstAttribute="leading" secondItem="zbp-At-5DH" secondAttribute="leading" id="cZC-UH-Vw7"/>
+                        <constraint firstAttribute="width" secondItem="zbp-At-5DH" secondAttribute="height" multiplier="75:90" id="dpL-9K-jU5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zbp-At-5DH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UPG-1E-rdJ"/>
+                <constraint firstItem="zbp-At-5DH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fbk-g1-gJh"/>
+                <constraint firstItem="zbp-At-5DH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xuQ-o7-zSq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="monthNameLabel" destination="ZXn-Ez-JKF" id="Rjh-wj-8sO"/>
+                <outlet property="verticalStackView" destination="jfd-th-7qZ" id="QhC-Tp-qOP"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
